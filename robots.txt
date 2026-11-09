@@ -1,0 +1,7 @@
+# PRÉVIA: bloqueia indexação enquanto o site está no domínio da Vercel.
+# No lançamento no domínio oficial, troque por:
+#   User-agent: *
+#   Allow: /
+#   Sitemap: https://clinicaintegris.com.br/sitemap.xml
+User-agent: *
+Disallow: /
