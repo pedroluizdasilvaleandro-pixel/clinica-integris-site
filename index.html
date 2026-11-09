@@ -359,21 +359,34 @@ details p{padding:0 0 26px;font-size:16px;line-height:1.75;color:var(--ink2)}
   </div>
 </section>
 
-<section id="dra-amanda" style="padding:20px 0 120px">
-  <div class="wrap g2" style="align-items:center">
-    <a class="rv photo" href="https://www.instagram.com/clinicaintegris/" style="height:560px;border-radius:28px;display:block" data-label="assets/dra-amanda.jpg&#10;(capa do vídeo de apresentação)" aria-label="Assistir à apresentação da Dra. Amanda no Instagram">
-      <img src="assets/dra-amanda.jpg" alt="" loading="lazy" onerror="this.remove()">
-      <span class="play" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)"><svg class="ic" viewBox="0 0 24 24" width="30" height="30" style="fill:currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-    </a>
-    <div class="rv">
-      <p class="eyebrow">Quem vai cuidar de você</p>
-      <h2 class="serif h2">Prazer, Dra. Amanda.</h2>
-      <p style="margin-top:24px;font-size:18px;line-height:1.75;color:#3D4657">[2–3 frases na voz dela: por que escolheu a odontologia, como gosta de atender e o que mais gosta de ver no fim de um tratamento.]</p>
-      <div style="display:flex;flex-direction:column;gap:14px;margin:32px 0 36px;font-size:16px">
-        <div style="display:flex;gap:12px"><svg class="ic" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" style="color:var(--gold-dk)"><path d="M3 9l9-5 9 5-9 5z"/><path d="M7 11.5V16c3 2 7 2 10 0v-4.5"/></svg><span>[Formação e especializações]</span></div>
-        <div style="display:flex;gap:12px"><svg class="ic" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" style="color:var(--gold-dk)"><circle cx="12" cy="8" r="4"/><path d="M5 21c1.2-4 4-6 7-6s5.8 2 7 6"/></svg><span>CRO-CE [Nº] · Responsável técnica da Clínica Integris</span></div>
+<section id="dra-amanda" class="story" style="padding:20px 0 130px">
+  <div class="wrap">
+    <div class="story-grid">
+      <div class="story-media rv">
+        <a class="photo" href="https://www.instagram.com/clinicaintegris/" style="height:620px;border-radius:28px;display:block" data-label="assets/dra-amanda.jpg&#10;(capa do vídeo de apresentação)" aria-label="Assistir à apresentação da Dra. Amanda no Instagram">
+          <img src="assets/dra-amanda.jpg" alt="Dra. Amanda, responsável técnica da Clínica Integris" loading="lazy" onerror="this.remove()">
+          <span class="play" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)"><svg class="ic" viewBox="0 0 24 24" width="30" height="30" style="fill:currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
+        <div class="creds">
+          <span>CRO-CE [Nº]</span><span>[Especialização em Implantodontia]</span><span>[Curso / certificação]</span>
+        </div>
       </div>
-      <a class="btn btn-navy" href="#agendar">Quero ser atendido pela Dra. Amanda</a>
+      <div>
+        <div class="rv">
+          <p class="eyebrow">A história por trás de cada sorriso</p>
+          <h2 class="serif h2">Prazer, Dra. Amanda.</h2>
+          <p style="margin-top:24px;font-size:18px;line-height:1.8;color:#3D4657">[Como tudo começou: o que a levou à odontologia — uma pessoa da família, uma experiência como paciente, o desejo de cuidar. 2 a 3 frases, em primeira pessoa.]</p>
+          <p style="margin-top:16px;font-size:18px;line-height:1.8;color:#3D4657">[Por que escolheu implantes e reabilitação: o momento em que viu um paciente voltar a sorrir e entendeu que era isso que queria fazer.]</p>
+        </div>
+        <blockquote class="story-quote rv serif">“[Frase dela sobre como gosta de cuidar dos pacientes — por exemplo, o que ela sente quando alguém volta a sorrir sem vergonha.]”<cite>— Dra. Amanda [SOBRENOME]</cite></blockquote>
+        <ol class="timeline rv">
+          <li><b>[ANO]</b><div><h3>Formação em Odontologia</h3><p>[Universidade]</p></div></li>
+          <li><b>[ANO]</b><div><h3>Especialização em Implantodontia</h3><p>[Instituição] · [carga horária ou destaque]</p></div></li>
+          <li><b>[ANO]</b><div><h3>Nasce a Clínica Integris</h3><p>[Por que escolheu o Montese e o que queria que a clínica fosse para os pacientes]</p></div></li>
+          <li><b>Hoje</b><div><h3>Nota 5,0 no Google</h3><p>39 avaliações de pacientes e atualização constante em [cursos, congressos, novas técnicas].</p></div></li>
+        </ol>
+        <a class="btn btn-navy rv" href="#agendar" style="margin-top:12px">Quero ser atendido pela Dra. Amanda</a>
+      </div>
     </div>
   </div>
 </section>
@@ -524,6 +537,19 @@ details p{padding:0 0 26px;font-size:16px;line-height:1.75;color:var(--ink2)}
 </div>
 
 <style>
+.story-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:start}
+.story-media{position:sticky;top:32px}
+.creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.creds span{padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:13px;font-weight:600}
+.story-quote{margin:40px 0;padding:32px 36px;border-radius:24px;background:var(--navy);color:var(--ivory);font-size:24px;line-height:1.5;font-style:italic;font-weight:300;position:relative}
+.story-quote cite{display:block;margin-top:18px;font-family:'Manrope',sans-serif;font-style:normal;font-size:14px;font-weight:600;color:var(--gold)}
+.timeline{list-style:none;padding:0 0 0 36px;margin:0 0 32px;position:relative}
+.timeline::before{content:'';position:absolute;left:6px;top:10px;bottom:10px;width:1px;background:var(--gold)}
+.timeline li{position:relative;padding:12px 0 18px}
+.timeline li::before{content:'';position:absolute;left:-36px;top:16px;width:11px;height:11px;border-radius:50%;background:var(--ivory);border:2px solid var(--gold)}
+.timeline b{display:block;font-family:'Fraunces',serif;font-weight:400;font-size:17px;color:var(--gold-dk);margin-bottom:4px}
+.timeline h3{font-size:18px;margin-bottom:4px}.timeline p{font-size:15px;line-height:1.6;color:var(--ink2)}
+@media (max-width:960px){.story-grid{grid-template-columns:minmax(0,1fr);gap:40px}.story-media{position:static}.story-media .photo{height:440px!important}.story-quote{font-size:20px;padding:28px}}
 .checks{list-style:none;padding:0;margin:32px 0 36px;display:flex;flex-direction:column;gap:14px}
 .checks li{position:relative;padding-left:34px;font-size:16px;line-height:1.5}
 .checks li::before{content:'';position:absolute;left:4px;top:4px;width:14px;height:8px;border-left:2px solid var(--gold-dk);border-bottom:2px solid var(--gold-dk);transform:rotate(-45deg)}
